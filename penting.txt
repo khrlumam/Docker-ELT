@@ -1,0 +1,65 @@
+dbt run --full-refresh #untuk mendrop table yg dibuat sebelum nya
+contoh error:
+07:12:03  1 of 4 START sql table model public.actors ..................................... [RUN]
+destination_postgres-1  | 2024-11-06 07:12:03.866 UTC [71] WARNING:  there is already a transaction in progress
+destination_postgres-1  | 2024-11-06 07:12:03.872 UTC [71] ERROR:  relation "public.actors" does not exist at character 241
+destination_postgres-1  | 2024-11-06 07:12:03.872 UTC [71] STATEMENT:  /* {"app": "dbt", "dbt_version": "1.4.7", "profile_name": "custom_postgres", "target_name": "dev", "node_id": "model.custom_postgres.actors"} */
+destination_postgres-1  | 
+destination_postgres-1  |         
+destination_postgres-1  |           
+destination_postgres-1  | 
+destination_postgres-1  |         create  table "destination_db"."public"."actors__dbt_tmp"
+destination_postgres-1  |         as (
+destination_postgres-1  |           SELECT * FROM "destination_db"."public"."actors"
+destination_postgres-1  |         );
+destination_postgres-1  |         
+dbt-1                   | 07:12:03  1 of 4 ERROR creating sql table model public.actors ............................ [ERROR in 0.12s]
+
+
+Setting profiles.yml
+
+postgres_transformations:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: host.docker.internal
+      port: 5434
+      user: postgres
+      pass: secret
+      dbname: destination_db
+      schema: public
+    prod:
+      type: postgres
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [prod_username]
+      pass: [prod_password]
+      dbname: [dbname]
+      schema: [prod_schema]
+  target: dev
+
+custom_postgres:
+  outputs:
+    dev:
+      type: postgres
+      threads: 1
+      host: host.docker.internal
+      port: 5434
+      user: postgres
+      pass: secret
+      dbname: destination_db
+      schema: public
+    prod:
+      type: postgres
+      threads: [1 or more]
+      host: [host]
+      port: [port]
+      user: [prod_username]
+      pass: [prod_password]
+      dbname: [dbname]
+      schema: [prod_schema]
+  target: dev
+
+  docker exec -it etl-destination_postgres-1 psql -U postgres #jalanin psql dbt

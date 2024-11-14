@@ -1,0 +1,126 @@
+[0m13:46:01.386683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6b9683e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6b306960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6b9d95b0>]}
+
+
+============================== 13:46:01.389667 | 9bbd78cb-0918-4ad9-969f-5f6e883e3435 ==============================
+[0m13:46:01.389667 [info ] [MainThread]: Running with dbt=1.6.2
+[0m13:46:01.390169 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/rezou/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:46:01.390544 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': PosixPath('/home/rezou/.dbt')}
+[0m13:46:01.390833 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m13:46:08.791168 [debug] [MainThread]: Starter project path: /home/rezou/.local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m13:46:08.795459 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:46:08.796052 [info ] [MainThread]: Setting up your profile.
+[0m13:46:10.395983 [info ] [MainThread]: Profile custom_postgres written to /home/rezou/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+[0m13:46:10.396585 [debug] [MainThread]: Command `dbt init` succeeded at 13:46:10.396479 after 9.01 seconds
+[0m13:46:10.396904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6aecb170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6aea3500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3a6b306960>]}
+[0m13:46:10.397236 [debug] [MainThread]: Flushing usage events
+[0m14:16:19.768958 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b178330e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b17cdd760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b17b84cb0>]}
+
+
+============================== 14:16:19.775620 | 8fcdb1ea-707b-43dd-ab9f-31ef711a42de ==============================
+[0m14:16:19.775620 [info ] [MainThread]: Running with dbt=1.6.2
+[0m14:16:19.776487 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'fail_fast': 'False', 'profiles_dir': '/home/rezou/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:16:19.777239 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rezou/Documents/docker_tutor/elt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:16:19.778136 [debug] [MainThread]: Command `dbt run` failed at 14:16:19.777949 after 0.02 seconds
+[0m14:16:19.778703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b185aed80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b1823b740>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6b183d3aa0>]}
+[0m14:16:19.779492 [debug] [MainThread]: Flushing usage events
+[0m14:34:39.551235 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6af6450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6af5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6af6360>]}
+
+
+============================== 14:34:39.558315 | bb26cc3c-6513-4d6b-92f9-b556cf4c6156 ==============================
+[0m14:34:39.558315 [info ] [MainThread]: Running with dbt=1.6.2
+[0m14:34:39.559263 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '/home/rezou/.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m14:34:39.560010 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rezou/Documents/docker_tutor/elt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:34:39.560970 [debug] [MainThread]: Command `dbt run` failed at 14:34:39.560784 after 0.02 seconds
+[0m14:34:39.561567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d70289e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6af6f30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff2d6af7d70>]}
+[0m14:34:39.562341 [debug] [MainThread]: Flushing usage events
+[0m14:41:56.286910 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f13443e30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f139e6960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f138eccb0>]}
+
+
+============================== 14:41:56.292166 | 7bcbd6e6-7fab-46ce-9b29-f0d710a25703 ==============================
+[0m14:41:56.292166 [info ] [MainThread]: Running with dbt=1.6.2
+[0m14:41:56.293144 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/rezou/.dbt', 'log_path': 'logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run --full-refresh', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:41:56.293932 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/rezou/Documents/docker_tutor/elt/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m14:41:56.294896 [debug] [MainThread]: Command `dbt run` failed at 14:41:56.294713 after 0.02 seconds
+[0m14:41:56.295549 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f13443260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f13440bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f7f13443890>]}
+[0m14:41:56.296520 [debug] [MainThread]: Flushing usage events
+[0m15:04:52.705794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f169632ede0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f169632e930>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f169632ce90>]}
+
+
+============================== 15:04:52.711388 | a0ba9e94-e96d-4022-ba5a-a2e2e089f81d ==============================
+[0m15:04:52.711388 [info ] [MainThread]: Running with dbt=1.6.2
+[0m15:04:52.712267 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/rezou/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:05:09.748620 [debug] [MainThread]: Starter project path: /home/rezou/.local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m15:05:09.756145 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:05:09.757102 [info ] [MainThread]: Setting up your profile.
+[0m15:05:36.505297 [debug] [MainThread]: Command `dbt init` succeeded at 15:05:36.504891 after 43.81 seconds
+[0m15:05:36.506108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1696eb2270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16974f6d80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f16966ac110>]}
+[0m15:05:36.506969 [debug] [MainThread]: Flushing usage events
+[0m10:13:40.252316 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099c041010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099c886960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099c020860>]}
+
+
+============================== 10:13:40.255876 | bac93a4a-83d8-4f53-bdff-5f08836a6870 ==============================
+[0m10:13:40.255876 [info ] [MainThread]: Running with dbt=1.6.2
+[0m10:13:40.256385 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': '/home/rezou/.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt init', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m10:13:49.210546 [debug] [MainThread]: Starter project path: /home/rezou/.local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m10:13:49.215809 [info ] [MainThread]: 
+Your new dbt project "custom_postgres" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:13:49.216566 [info ] [MainThread]: Setting up your profile.
+[0m10:13:55.514395 [debug] [MainThread]: Command `dbt init` succeeded at 10:13:55.514166 after 15.27 seconds
+[0m10:13:55.514953 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099d1588c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099c7a2a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f099c886960>]}
+[0m10:13:55.515435 [debug] [MainThread]: Flushing usage events
